@@ -115,6 +115,7 @@ public class SubmitStepDefinition extends TestBase
             SubmitOrder.initiate(testBase.driver).PaymentInfoBtn.click();
             testBase.WaitTillElementClickable(SubmitOrder.initiate(testBase.driver).ConfirmOrder);
             SubmitOrder.initiate(testBase.driver).ConfirmOrder.click();
+            testBase.pause();
         }
 
         catch (AssertionError | Exception e)
